@@ -1,6 +1,6 @@
 {
     "name": "@polpware/scripts-frnt",
-    "version": "2.8.0",
+    "version": "2.8.1",
     "dependencies": {
         "animate.css": "^3.7.0",
         "bootstrap-select": "^1.13.2",
@@ -8,7 +8,6 @@
         "clipboard": "^2.0.1",
         "custombox": "^4.0.3",
         "datatables": "^1.10.18",
-        "flag-icon-css": "^3.0.0",
         "flatpickr": "^4.5.1",
         "gmaps": "^0.4.24",
         "instafeed.js": "^1.4.1",
