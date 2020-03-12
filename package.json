@@ -1,6 +1,6 @@
 {
     "name": "@polpware/scripts-frnt",
-    "version": "2.8.1",
+    "version": "2.8.2",
     "dependencies": {
         "animate.css": "^3.7.0",
         "bootstrap-select": "^1.13.2",

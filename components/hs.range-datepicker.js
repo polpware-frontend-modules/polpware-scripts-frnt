@@ -60,17 +60,20 @@
           optWrapper = $this.data('rp-wrapper'),
           optIsInline = Boolean($this.data('rp-is-inline')),
           optType = $this.data('rp-type'),
-          optDateFormat = $this.data('rp-date-format'),
+            optDateFormat = $this.data('rp-date-format'),
+            optMinDate = $this.data('rp-min-date'),
+            optMaxDate = $this.data('rp-max-date'),
           optDefaultDate = JSON.parse(el.getAttribute('data-rp-default-date')),
-          optIsDisableFutureDates = $this.data('rp-is-disable-future-dates');
+            optIsDisableFutureDates = $this.data('rp-is-disable-future-dates');
 
         $this.flatpickr({
           inline: optIsInline, // boolean
           mode: optType ? optType : 'single', // 'single', 'multiple', 'range'
           dateFormat: optDateFormat ? optDateFormat : 'd M Y',
           defaultDate: optDefaultDate,
-          appendTo: $(optWrapper)[0],
-          maxDate: optIsDisableFutureDates ? 'today' : false,
+            appendTo: $(optWrapper)[0],
+            minDate: optMinDate ? optMinDate : false,
+            maxDate: optIsDisableFutureDates ? 'today' : (optMaxDate ? optMaxDate : false),
           locale: {
             firstDayOfWeek: 1,
             weekdays: {
